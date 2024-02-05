@@ -1,0 +1,13 @@
+#include "autoware_auto_planning_msgs/msg/Trajectory.idl"
+#include "std_msgs/msg/Header.idl"
+
+module autoware_auto_planning_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " A set of trajectory points with goal for the obca")
+    struct TrajectoryWithGoal {
+      geometry_msgs::msg::PoseStamped goal;
+      autoware_auto_planning_msgs::msg::Trajectory trajectory;
+    };
+  };
+};
