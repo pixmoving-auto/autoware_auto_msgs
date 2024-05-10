@@ -8,6 +8,7 @@ module autoware_auto_planning_msgs {
     struct TrajectoryWithGoal {
       geometry_msgs::msg::PoseStamped goal;
       autoware_auto_planning_msgs::msg::Trajectory trajectory;
+      std_msgs::msg::Bool is_new_goal;
     };
   };
 };
